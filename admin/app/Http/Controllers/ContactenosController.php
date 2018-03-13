@@ -33,7 +33,6 @@ class ContactenosController extends Controller
     }
     public function store (ContactenosFormRequest $request)
     {
-    	dd($request);
         $contactenos=new Contactenos;
     	$contactenos->titulo=$request->get('titulo');
     	$contactenos->direccion=$request->get('direccion');

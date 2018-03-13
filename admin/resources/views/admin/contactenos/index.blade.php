@@ -24,7 +24,7 @@
 					<th>{{ $cat->numtel }}</th>
 					<th>{{ $cat->correo }}</th>
 					<td>
-						<a href=""><button class="btn btn-info">Editar</button></a>
+						<a href="{{URL::action('ContactenosController@edit',$cat->id)}}"><button class="btn btn-info">Editar</button></a>
 						<a href=""><button class="btn btn-danger">Eliminar</button></a>
 					</td>
 				</tr>
